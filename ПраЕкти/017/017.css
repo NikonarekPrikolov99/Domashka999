@@ -1,0 +1,86 @@
+body {
+    text-align: center;
+    margin: 0;
+    
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right,#320000,rgb(82, 82, 82));
+    
+}
+@keyframes zvet {
+    0% {
+      color: blueviolet; 
+    }
+    50% {
+      color: deeppink;
+    }
+    100% {
+      color: crimson;
+    }
+  }
+@keyframes proz {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+  
+  
+  @keyframes rotat {
+    0% {
+      transform: rotate(0deg); 
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  @keyframes razm {
+    0% {
+        font-size: 100px;
+    }
+    100% {
+        font-size: 200px;
+    }
+ }
+  
+
+  @keyframes gde {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: calc(100vw - 200px);
+    }
+  }
+  
+  .box {
+    width: 400px;
+    left: 0;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+  
+    animation: 
+      zvet 3s infinite alternate,
+      proz 2s infinite alternate, 
+      rotat 5s infinite linear, 
+      razm 4s infinite alternate, 
+      gde 6s infinite alternate; 
+  }
+  

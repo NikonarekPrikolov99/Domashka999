@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="014.css" />
+    <title>Document</title>
+    <link>
+  </head>
+  <style>
+    [data-tooltip] {
+     position: relative; 
+    }
+    [data-tooltip]::after {
+     content: attr(data-tooltip);
+     position: absolute; 
+     width: 100px; 
+     right: 40px; top: 0; 
+     background: #ff0000; 
+     color: #000000; 
+     padding: 0.5em;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+     pointer-events: none;
+     opacity: 0;
+     transition: 1s;
+    } 
+    [data-tooltip]:hover::after {
+     opacity: 1;
+     top: 2em; 
+    }
+   </style>
+  <body>
+    <div class="container">
+      <div class="box" data-tooltip="End of the moon">
+        <p class="som">Космос це диво</p>
+        <div class="high"></div>
+      </div>
+      <div class=".sprites">
+        <div class="sprite" data-tooltip="Youtube"></div>
+        <div class="sprite sprite-y" data-tooltip="Twitter"></div>
+      </div>
+    </div>
+    <form action="baton">
+      <p><input type="button" class="k1" value="Клацни i все буде добре)"></p>
+    </form>
+  </body>
+</html>

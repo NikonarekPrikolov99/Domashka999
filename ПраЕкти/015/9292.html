@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Transformations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f9;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    .rotate {
+      background-color: #ff6f61;
+      transform: rotate(45deg);
+    }
+
+    .scale {
+      background-color: #6bc2e2;
+      transform: scale(1.5);
+    }
+
+    .translate {
+      background-color: #82c985;
+      transform: translate(50px, 30px);
+    }
+
+    .skew {
+      background-color: #f9a74b;
+      transform: skew(20deg, 10deg);
+    }
+
+    .rotate-scale {
+      background-color: #d36bf0;
+      transform: rotate(30deg) scale(1.2);
+    }
+
+    .hover-effect {
+      background-color: #4caf50;
+      transition: transform 0.3s;
+    }
+
+    .hover-effect:hover {
+      transform: rotate(15deg) scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Демонстрація CSS-трансформацій</h1>
+  <div class="container">
+    <div class="box rotate">Rotate</div>
+    <div class="box scale">Scale</div>
+    <div class="box translate">Translate</div>
+    <div class="box skew">Skew</div>
+    <div class="box rotate-scale">Rotate + Scale</div>
+    <div class="box hover-effect">Hover me!</div>
+  </div>
+</body>
+</html>

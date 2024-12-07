@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+  
+.zag {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to bottom right,#320000,rgb(82, 82, 82));
+}
+  
+.kor {
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  background-image: linear-gradient(to top right, #f0f0f0, #171717);
+  transition: all 10s ease-in;
+
+}
+.kor:hover {
+  background-image: linear-gradient(to top right, #0051ff, #11ff00);
+  
+}
+
+
+ 

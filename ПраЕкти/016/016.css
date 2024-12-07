@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    color: #f0f0f0;
+    margin: 0;
+    
+}
+    
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right,#320000,rgb(82, 82, 82));
+    flex-wrap: wrap;
+    gap: 100px;
+    
+}
+    
+.box {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top right, #f0f0f0, #171717);
+    transition: transform 1s cubic-bezier(1, -0.30, 0.300, 2);
+    line-height: 150px;
+}
+    
+.per {
+    transform: rotate(-45deg);
+
+}
+.scl {
+    transform: scale(2);
+
+}
+.tra {
+    transform: translate(100px, 50px);
+
+}
+.skw {
+    transform: skew(20deg, 30deg);
+
+}

@@ -1,0 +1,45 @@
+.high {
+    height: 400px;
+}
+  
+.box {
+    background-color: rebeccapurple;
+    background-image: url("19e13c58ff5cf5ffe040169d30751737.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    color: azure;
+    text-align: center;
+    background-attachment: scroll;
+    
+}
+html {
+    background-image: radial-gradient(#000000, rgb(94, 94, 94));
+}
+.k1 {
+    background-color: blueviolet;
+    height: 100px;
+    font-size: 50px;
+}
+.sprites {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+.sprite {
+    width: 208px;
+    height: 208px;
+    background-image: url(1111.jpg);
+    background-repeat: no-repeat;
+    background-size: 430px;
+}
+.sprite-y {
+    background-position: -220px -2px;
+    
+}
+.som::before {
+    content: "😀";
+}
+.som::after {
+    content: "🌙";
+}
